@@ -4,7 +4,56 @@
 #include <cmath>
 using namespace std;
 //Josiah Light
-
+class chart
+{
+    int id;
+    char name[100];
+   
+    public:
+        void set_p()
+        {
+          ofstream fout;
+fout.open("chart.txt");
+        }
+   
+        void display_p()
+        {
+            cout << "Date:   Time:   Players:" << endl;
+    if (input.is_open()) {
+        string line;
+        while (getline(input, line)) {
+            cout << line << endl;
+            ptr[size] = line;
+            size++;
+        }
+        input.close();
+        }
+};
+ 
+class time: private chart
+{
+    char course[50];
+    int fee;
+     
+    public:
+    void set_s()
+        {
+           fout.open("chart.txt"); 
+        }
+         
+        void display_s()
+        {
+            cout << "Date:   Time:   Players:" << endl;
+    if (input.is_open()) {
+        string line;
+        while (getline(input, line)) {
+            cout << line << endl;
+            ptr[size] = line;
+            size++;
+        }
+        input.close();
+        }
+};
 int main() {
 ofstream fout;
 fout.open("chart.txt");

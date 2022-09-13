@@ -8,10 +8,15 @@ using namespace std;
 int main() {
 ofstream fout;
 fout.open("chart.txt");
-  x, n;
-	int *array = new int["chart.txt"];
-	for (x = 0; x < n; x++) {
-		cin >> arr[x];
-	}
+ int size = 0;
+
+    if (input.is_open()) {
+        string line;
+        while (getline(input, line)) {
+            cout << line << endl;
+            ptr[size] = line;
+            size++;
+        }
+        input.close();
   fout.close();
 	return 0;

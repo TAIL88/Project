@@ -9,23 +9,9 @@ ofstream fout;
 class chart
 {
     public:
-        void set_p()
-        {
-          
-fout.open("chart.txt");
-        }
-   
         void display_p()
         {
-            cout << "Date:   Time:   Players:" << endl;
-    if (input.is_open()) {
-        string line;
-        while (getline(input, line)) {
-            cout << line << endl;
-            ptr[size] = line;
-            size++;
-        }
-        input.close();
+           cout << "Date:   Time:   Players:" << endl;
         }
 };
  
@@ -39,7 +25,7 @@ class time: private chart
          
         void display_s()
         {
-            cout << "Date:   Time:   Players:" << endl;
+            
     if (input.is_open()) {
         string line;
         while (getline(input, line)) {

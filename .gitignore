@@ -5,13 +5,13 @@
 using namespace std;
 
 //Josiah Light
-
+ofstream fout;
 class chart
 {
     public:
         void set_p()
         {
-          ofstream fout;
+          
 fout.open("chart.txt");
         }
    
@@ -51,7 +51,6 @@ class time: private chart
         }
 };
 int main() {
-ofstream fout;
 fout.open("chart.txt");
  int size = 0;
 cout << "Date:   Time:   Players:" << endl;

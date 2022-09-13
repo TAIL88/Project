@@ -3,12 +3,11 @@
 #include <fstream>
 #include <cmath>
 using namespace std;
+
 //Josiah Light
+
 class chart
 {
-    int id;
-    char name[100];
-   
     public:
         void set_p()
         {
@@ -32,9 +31,6 @@ fout.open("chart.txt");
  
 class time: private chart
 {
-    char course[50];
-    int fee;
-     
     public:
     void set_s()
         {

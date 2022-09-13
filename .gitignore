@@ -36,6 +36,28 @@ class time: private chart
         input.close();
         }
 };
+
+template <class T>
+Array<T>::Array()
+{
+    mCount = 0;
+    mData = new T[mCount];
+    for (int i = 0; i < mCount; i++)
+        mData[i] = 0;
+}
+
+template <class T>
+Array<T>::~Array()
+{
+    delete[] mData;
+}
+
+template <class T>
+T & Array<T>::operator[](const int index)
+{
+    return mData[index];
+}
+
 int main() {
 fout.open("chart.txt");
  int size = 0;
@@ -50,3 +72,4 @@ cout << "Date:   Time:   Players:" << endl;
         input.close();
   fout.close();
 	return 0;
+};

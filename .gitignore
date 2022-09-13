@@ -1,32 +1,17 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <cmath>
+using namespace std;
+//Josiah Light
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+int main() {
+ofstream fout;
+fout.open("chart.txt");
+  x, n;
+	int *array = new int["chart.txt"];
+	for (x = 0; x < n; x++) {
+		cin >> arr[x];
+	}
+  fout.close();
+	return 0;

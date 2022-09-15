@@ -26,12 +26,7 @@ class time: private chart
         void display_s()
         {
             
-    if (input.is_open()) {
-        string line;
-        while (getline(input, line)) {
-            cout << line << endl;
-            ptr[size] = line;
-            size++;
+   
         }
         input.close();
         }
